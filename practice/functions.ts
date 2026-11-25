@@ -64,3 +64,15 @@ const formatTestIdArrow = (n: number): string => {
 
 console.log(formatTestIdArrow(7));   // TC-07
 console.log(formatTestIdArrow(12));  // TC-12
+
+
+
+
+const bugTitleArrow = (area: string, summary: string, severity: string = 'Medium'):string=>{
+     
+    return `[${area}] ${summary} (${severity})`;
+
+};
+
+console.log(bugTitleArrow('Checkin', 'Total is wrong'));                
+console.log(bugTitleArrow('Login', 'Button does nothing', 'Low'));  
